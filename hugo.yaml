@@ -3,6 +3,10 @@ languageCode: "en-us"
 title: "Obinna Ngini"
 theme: hugo-profile
 
+caches:
+  images:
+    dir: :cacheDir/images
+
 enableEmoji: true
 
 outputs:
