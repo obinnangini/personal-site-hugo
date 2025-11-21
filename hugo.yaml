@@ -1,0 +1,561 @@
+baseURL: "https://obinnangini.com"
+languageCode: "en-us"
+title: "Obinna Ngini"
+theme: hugo-profile
+
+enableEmoji: true
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+  #services:
+  #googleAnalytics:
+  #id: G-MEASUREMENT_ID
+  #disqus:
+#shortname: your-disqus-shortname
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    # - identifier: blog
+    #   name: Blog
+    #   title: Blog posts
+    #   url: /blogs
+    #   weight: 1
+    - identifier: gallery
+      name: Gallery
+      title: Gallery
+      url: /gallery
+      weight: 1
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Obinna Ngini"
+  description: Learn about Obinna Ngini
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/images/fav/fav.svg"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+  # disableThemeToggle: true
+  # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # When using hex codes for colors, quotations must be used along with the # sign
+  color:
+    textColor: "#344038"
+    secondaryTextColor: "#727d6b"
+    # textLinkColor: "#00ff7d"
+    backgroundColor: "#e9f0ed"
+    secondaryBackgroundColor: "#64ffda1a"
+    # primaryColor: "#007bff"
+    # secondaryColor: "#f8f9fa"
+
+    darkmode:
+  #     textColor: "#e4e6eb"
+  #     secondaryTextColor: "#b0b3b8"
+      textLinkColor: "#437d58"
+  #     backgroundColor: "#18191a"
+  #     secondaryBackgroundColor: "#212529"
+  #     primaryColor: "#ffffff"
+  #     secondaryColor: "#212529"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    # brandName: "Obinna Ngini" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hey there 👋 I'm"
+    title: "Obinna Ngini."
+    subtitle: "I like to build things and mentor people. Problem solving inspires me."
+    content: " I enjoy building distributed and resilient systems that can recover from errors. I've built back-end systems and front-end stylesheets, and I am comfortable anywhere in the stack"
+    image: /images/main.jpg
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      url: "https://www.dropbox.com/scl/fi/xuoz8jceupznct2s7hxbt/ObinnaNginiSoftwareEngineerResume.pdf?rlkey=pf32yp5atdrma0firrpkbfz4h&st=wdbkyr87&dl=1"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/obinnangini
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/obinna-n-5613827a
+#      customIcons:
+#        - icon: /fav.png
+#          url: "https://example.com"
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.jpg"
+#    bottomImage:
+#      enable: true
+    content: |-
+      I am a software engineer with a passion for building scalable, resilient systems. I have a background in computer science and entrepreneurship. I am currently working as a software developer at [Bitly](https://bitly.com) in Austin, TX.
+
+      I have built and managed Edge systems at [WP Engine](https://wpengine.com) responsible for routing over a million domains correctly to sites.
+      
+      Prior to that, I worked at [JP Morgan Chase & Co.](https://www.jpmorganchase.com) building and evangelizing internal front and back end frameworks, as well as systems processing and repairing ATM transactions
+      
+      In my free time I like to read, lift weights, play and watch soccer. I'm a big fan of Chelsea FC and getting lost in a good fantasy novel.
+    skills:
+      enable: true
+      title: "Here are a few technologies I've worked with:"
+      items:
+        - "Go"
+        - "Python"
+        - "Java"
+        - "JavaScript"
+        - "Node"
+        - "Ruby"
+        - "React"
+        - "Vue"
+        - "HTML"
+        - "CSS"
+        - "MySQL"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - company: "Bitly"
+        companyUrl: "https://bitly.com/"
+        jobs:
+          - name: "Staff Backend Engineer"
+            date: "November 2025 - Present"
+            featuredItems:
+              fontAwesomeIcons:
+                - icon: fa-brands fa-golang
+                  url: https://go.dev/
+                - icon: fa-brands fa-github
+                  url: https://github.com/onginibitly
+#              customIcons:
+#                - icon: /fav.png
+#                  url: "https://example.com"
+            content: |
+              I am currently working as a software engineer at [Bitly](https://bitly.com/) in Austin, TX.
+              My focus is on designing new systems that will improve the performance of core Bitly product while also trying to think of new features and products to add to the Bitly platform
+
+              - Mentor junior engineers
+              - Lead design reviews and architecture discussions
+      - company: "WP Engine"
+        companyUrl: "https://wpengine.com"
+        info:
+          content: I worked on the Outer Edge team for the duration of my time at WP Engine.
+        jobs:
+          - name: "Senior Staff Software Engineer and Technical Lead"
+            date: "October 2021 - November 2025"
+            # date: "October 2021 - Present"
+            content: |
+              - Develop cloud native Golang services orchestrated by Kubernetes and deployed to GCP via Jenkins CI/CD pipelines
+              - Create and manage routing configuration in a Golang service to enable customers to access their web content, providing
+              routing and a CDN via a vendor integration
+              - Implement rollout of routing layer to over 2 million domains, driving 40% customer adoption over 3 years
+              - Collaborate on cross-team solution for identification and mitigation of bot network traffic
+              - Design and oversee implementation of rate limiting logic to prevent system generative destructive actions
+              - Create proposals for deploying service configuration service in phases acting on specific customer cohorts
+              - Oversee the domain management and mapping system for over 1 million customer sites via a Ruby application
+              - Outline migration plan to merge 2 separate routing configuration management services into one performant system
+              - Generate Architecture Decision Record (ADR) and designs for a multizone network strategy, providing multiple feature
+              sets across redundant zones
+              - Organize biweekly team learning/mentoring sessions for all team engineers
+              - Maintain a Golang service that configures a WAF for hosted sites
+              - Manage and improve a Golang service that provides real time DNS validation information to customers
+              - Draft enhancements to store DNS, SSL and HTTP header validation information in caching layer data lake for increased
+              service performance and customer usage analytics
+              - Deploy and manage a tool used to administer databases via a secure browser login
+              - Document and design streamlined association of domains to SSL certificates incorporating customer feedback
+            # info:
+            #   content: Working as a Senior Staff Software Engineer
+            featuredItems:
+              fontAwesomeIcons:
+                - icon: fa-brands fa-github
+                  url: https://github.com/obinnanginiwp
+                - icon: fa-brands fa-golang
+                  url: https://go.dev/
+                - icon: fa-brands fa-python
+                  url: https://www.python.org/
+                - icon: fa-brands fa-python
+                  url: https://www.ruby-lang.org/en/
+                  # tooltip: Example tooltip content
+              customIcons:
+                - icon: /images/icons/kubernetes-logo_with_borders.svg
+                  url: https://kubernetes.io/
+#              customIcons:
+#                - icon: /fav.png
+#                  url: "https://example.com"
+#                  tooltip: Example tooltip content
+          - name: "Senior Software Engineer"
+            date: "October 2019 - October 2021"
+            content: |
+              - Created and updated DNS records via a Golang service integrated with vendor software
+              - Managed a Ruby application that orders and manages SSL certificates for domains
+              - Empowered customers to update their web content using the Secure Shell (SSH) protocol to connect to a dynamically
+              generated Kubernetes pod for over 1 million sites
+              - Enhanced SSH shell service with port-forward functionality to enable customers to administer their databases securely
+              - Updated Django service used to configure DNS records via the Domain Connect protocol
+              - Maintained a service used to make updates to customer sites via the Git version control system
+              - Oversaw the integration of a new SSL certificate provider for all customer domains
+            featuredItems:
+              fontAwesomeIcons:
+                - icon: fa-brands fa-github
+                  url: https://github.com/obinnanginiwp
+                - icon: fa-brands fa-golang
+                  url: https://go.dev/
+                - icon: fa-brands fa-python
+                  url: https://www.python.org/
+                - icon: fa-brands fa-python
+                  url: https://www.ruby-lang.org/en/
+                  # tooltip: Example tooltip content
+              customIcons:
+                - icon: /images/icons/kubernetes-logo_with_borders.svg
+                  url: https://kubernetes.io/
+              
+
+      - company: "JP Morgan Chase & Co."
+        companyUrl: "https://www.jpmorganchase.com"
+        # info:
+        #   content: I worked as a software engineer on 3 separate teams over 5 years.
+        jobs:
+          - name: "Software Engineer, Senior Associate"
+            date: "February 2018 - September 2019"
+            # info:
+            #   content: I worked as a software engineer on 3 separate teams over 5 years.
+            content: |
+              - Developed a pipeline for procuring and security scanning open-source libraries for use by software engineers, reducing
+              library procurement time by over 30%
+              - Promoted cloud adoption through the development of frameworks and starter templates in languages such as React and
+              Angular designed to kick-start application developers
+              - Collaborated with other firmwide teams to create and enhance starter functionality and additional features
+              - Developed and maintained cloud native applications deployed to private cloud that utilize cloud platform services
+              - Implemented applications that foster education on a wide variety of technology by providing directed progressive training
+              documents as well as hands-on training with near-real time validation and user feedback
+              - Built style sheets integrated with Twitter Bootstrap library to provide a custom and consistent application look and feel
+            featuredItems:
+              fontAwesomeIcons:
+                - icon: fa-brands fa-java
+                  url: https://www.java.com/en/
+                - icon: fa-brands fa-node-js
+                  url: https://nodejs.org/en
+                - icon: fa-brands fa-react
+                  url: https://react.dev/
+                - icon: fa-brands fa-angular
+                  url: https://angular.dev/
+                  # tooltip: Example tooltip content
+          - name: "Software Engineer, Associate"
+            date: "February 2017 - January 2018"
+            # info:
+            #   content: I worked as a software engineer on 3 separate teams over 5 years.
+            content: |
+              - Implemented code samples for Bootstrap components in React, Angular and AngularJS
+              - Built a NodeJS application to schedule activation of applications, and reduce overall cloud platform utilization and
+              expenditure by over 20%
+            featuredItems:
+              fontAwesomeIcons:
+                - icon: fa-brands fa-java
+                  url: https://www.java.com/en/
+                - icon: fa-brands fa-node-js
+                  url: https://nodejs.org/en
+                - icon: fa-brands fa-react
+                  url: https://react.dev/
+                - icon: fa-brands fa-angular
+                  url: https://angular.dev/
+                  # tooltip: Example tooltip content
+          - name: "Software Engineer - Technology Analyst Program (TAP)"
+            date: "July 2014 - January 2017"
+            # info:
+            #   content: I worked as a software engineer on 3 separate teams over 5 years.
+            content: |
+              - Developed backend routing, processing and repair systems for commercial bank ATM transactions
+              - Enhanced systems used to securely transmit transaction information to financial institutions and the Federal Reserve
+              - Designed and built web service maintenance automation tool, reducing time from more than 60 hours to less than 1 hour
+            featuredItems:
+              fontAwesomeIcons:
+                - icon: fa-brands fa-java
+                  url: https://www.java.com/en/
+                - icon: fa-brands fa-angular
+                  url: https://angularjs.org/
+                  # tooltip: Example tooltip content
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Bachelor of Science in Computer and Information Sciences, Entrepreneurship minor"
+        school:
+          name: "The Ohio State University"
+          url: "https://www.osu.edu"
+        date: "2010 - 2014"
+        GPA: "3.636 out of 4.0"
+        content: |-
+          Graduated Cum Laude from the Honors Program
+          
+          Capstone Project
+            - Developed Android mobile application to display Ohio Supercomputer Center (OSC) news articles, calendar events and other information
+          
+          Academic Achievements
+            - Ohio State College of Arts and Sciences Dean’s List, Autumn 2011 to Spring 2013
+          
+          Extracurricular Activities
+            - Treasurer, The National Society of Collegiate Scholars, Ohio State Chapter, 2011 to 2013
+            - Member, Africa Youth League
+#        featuredLink:
+#          enable: true
+#          name: "My academic record"
+#          url: "https://example.com"
+      - title: "Secondary School Diploma"
+        school:
+          name: "Loyola Jesuit College, Abuja"
+          url: "https://loyolajesuit.org"
+        date: "2003 - 2009"
+        content: |
+          WASSCE Results:
+            - Mathematics: A1
+            - Physics: A1
+            - Technical Drawing: A1
+            - Geography: A1
+            - Chemistry: B2
+            - Economics: B2
+            - Further Mathematics: B2
+            - English Language: B3
+            - Hausa Language: E8
+          
+          JAMB Results Aggregated Score: **278**
+          
+          SAT Results (Nov 2008): **1960**
+            - Mathematics: 620
+            - Critical Reading: 680
+            - Writing: 660
+          
+          SAT Results (Dec 2009): **2170**
+            - Mathematics: 710
+            - Critical Reading: 760
+            - Writing: 700
+          
+          SAT II Results (Jan 2009): **2210**
+            - Mathematics Level 1: 730
+            - Mathematics Level 2: 750
+            - Physics: 730
+
+  # Volunteering
+  volunteering:
+    enable: true
+#    title: "Volunteer Work"
+    index: false
+    items:
+      - title: "Volunteer Instructor"
+        program:
+          name: "Code2College After School Program"
+          url: "https://code2college.org"
+        date: "Sep - Nov 2021"
+        content: |-
+          I tutored high school students via Zoom in an after school program designed to teach software engineering in Python
+      - title: "Volunteer Instructional Facilitator"
+        program:
+          name: "Tech Corps Female High School Hackathon"
+          url: "https://www.techcorps.org"
+        date: "Dec 9 2017"
+        content: |-
+          I facilitated a Hackathon for a group of high school female students who built an app using MIT App Inventor 2
+
+  # Achievements
+  achievements:
+    enable: true
+    title: "Certifications"
+    items:
+      - title: Leadership Essentials, part of Black Leadership Academy, 2023
+        content: issued by McKinsey & Company
+        url: https://www.credly.com/badges/6a15e88b-dde5-4ead-b60b-da3ec4cc46e8/linked_in_profile
+      - title: Becoming An Effective Manager, 2022
+        content: issued by Abilitie
+        url: https://www.credly.com/badges/19a7f35d-62da-4b25-afad-6ef96a2af28c/linked_in_profile
+      - title: Certified ScrumMaster, 2021
+        content: issued by ScrumAlliance
+        url: https://bcert.me/slieqkzcx
+#        image: /images/achievement.jpg
+
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Bootstrap StyleGuide
+        content: A site showing customized Bootstrap 4 CSS components, built with Vue.
+        # image: /images/projects/profile.png
+        featured:
+          name: Demo
+          link: https://storage.googleapis.com/bootstrap-styleguide/index.html#/
+        badges:
+          - "Vue"
+          - "Bootstrap"
+          - "Javascript"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/obinnangini/bootstrap-styleguide
+          - icon: fab fa-vuejs
+            url: https://vuejs.org
+
+      - title: Obi Bootstrap
+        content: A customized Bootstrap 4 CSS framework built from source SCSS files.
+        # image: /images/projects/converter.jpg
+        # featured:
+        #   name: Demo
+        #   link: https://django-converter.herokuapp.com
+        badges:
+          - "Bootstrap"
+          - "SCSS"
+          - "CSS"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/obinnangini/obi-bootstrap
+
+      - title: Music Modifier
+        content: A command line utility that modifies music files metadata and filenames in bulk using Java.
+        # image: /images/projects/profile2.jpg
+        # featured:
+        #   name: Demo V2
+        #   link: https://hugo-profile-2.netlify.app
+        badges:
+          - "Java"
+          - "Maven"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/obinnangini/music-modifier
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: My inbox is always open, please reach out if you want to connect!
+    btnName: Mail me
+    btnLink: mailto:obinnangini@gmail.com
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+    #   messageRows: 5
+
+  footer:
+  #  recentPosts:
+  #    path: "blogs"
+  #    count: 3
+  #    title: Recent Posts
+  #    enable: true
+  #    disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/obinnangini
+      linkedin: https://www.linkedin.com/in/obinna-n-5613827a
+    #  twitter: https://twitter.com
+    #  instagram: https://instagram.com
+    #  facebook: https://facebook.com
+#
+#  # List pages like blogs and posts
+#  listPages:
+#    disableFeaturedImage: false
+#
+#  # Single pages like blog and post
+#  singlePages:
+#    socialShare: true
+#    readTime:
+#      enable: true
+#      content: "min read"
+#    scrollprogress:
+#      enable: true
+#    tags:
+#      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
