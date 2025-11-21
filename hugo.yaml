@@ -391,34 +391,34 @@ params:
           name: "Loyola Jesuit College, Abuja"
           url: "https://loyolajesuit.org"
         date: "2003 - 2009"
-        content: |
-          WASSCE Results:
-            - Mathematics: A1
-            - Physics: A1
-            - Technical Drawing: A1
-            - Geography: A1
-            - Chemistry: B2
-            - Economics: B2
-            - Further Mathematics: B2
-            - English Language: B3
-            - Hausa Language: E8
+        # content: |
+        #   WASSCE Results:
+        #     - Mathematics: A1
+        #     - Physics: A1
+        #     - Technical Drawing: A1
+        #     - Geography: A1
+        #     - Chemistry: B2
+        #     - Economics: B2
+        #     - Further Mathematics: B2
+        #     - English Language: B3
+        #     - Hausa Language: E8
           
-          JAMB Results Aggregated Score: **278**
+        #   JAMB Results Aggregated Score: **278**
           
-          SAT Results (Nov 2008): **1960**
-            - Mathematics: 620
-            - Critical Reading: 680
-            - Writing: 660
+        #   SAT Results (Nov 2008): **1960**
+        #     - Mathematics: 620
+        #     - Critical Reading: 680
+        #     - Writing: 660
           
-          SAT Results (Dec 2009): **2170**
-            - Mathematics: 710
-            - Critical Reading: 760
-            - Writing: 700
+        #   SAT Results (Dec 2009): **2170**
+        #     - Mathematics: 710
+        #     - Critical Reading: 760
+        #     - Writing: 700
           
-          SAT II Results (Jan 2009): **2210**
-            - Mathematics Level 1: 730
-            - Mathematics Level 2: 750
-            - Physics: 730
+        #   SAT II Results (Jan 2009): **2210**
+        #     - Mathematics Level 1: 730
+        #     - Mathematics Level 2: 750
+        #     - Physics: 730
 
   # Volunteering
   volunteering:
